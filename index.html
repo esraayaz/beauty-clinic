@@ -23,19 +23,82 @@
     <title>Beauty Clinic</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav>
         <ul>
           <li><a href="#header">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="doctors.html">Our Doctors</a></li>
-          <li><a href="treatments.html">Treatments</a></li>
-          <li>
-            <a href="appointment.html" id="appointment">Online Appointment</a>
+         <li><a href="#about">About Us</a></li>
+
+    <!-- Our Doctors Multi-level Dropdown -->
+          <li class="dropdown">
+            <a href="doctors.html">Our Doctors <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-nested">
+                <a href="doctors.html#dermatology">Dermatology <span class="second-arrow">▼</span></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="doctors.html#dr-amanda-collins" class="dropdown-link">Dr. Amanda Collins</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-nested">
+                <a href="doctors.html#cosmetic">Cosmetic Surgery <span class="second-arrow">▼</span></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="doctors.html#dr-jessica-monroe" class="dropdown-link">Dr. Jessica Monroe</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-nested">
+                <a href="doctors.html#aesthetic">Aesthetic Medicine <span class="second-arrow">▼</span></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="doctors.html#dr-ethan-walker" class="dropdown-link">Dr. Ethan Walker</a></li>
+                </ul>
+              </li>
+            </ul>
           </li>
+
+    <!-- Treatments Multi-level Dropdown -->
+          <li class="dropdown">
+            <a href="treatments.html">Treatments <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-nested">
+                <a href="treatments.html#facial">Facial Treatments <span class="second-arrow">▼</span></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="treatments.html#hydrafacial" class="dropdown-link">Hydrafacial</a></li>
+                  <li><a href="treatments.html#chemical-peel" class="dropdown-link">Chemical Peel</a></li>
+                  <li><a href="treatments.html#microdermabrasion" class="dropdown-link">Microdermabrasion</a></li>
+                  <li><a href="treatments.html#microneedling" class="dropdown-link">Microneedling</a></li>
+                  <li><a href="treatments.html#laser-resurfacing" class="dropdown-link">Laser Resurfacing</a></li>
+                  <li><a href="treatments.html#led-therapy" class="dropdown-link">LED Light Therapy</a></li>
+                  <li><a href="treatments.html#oxygen-facial" class="dropdown-link">Oxygen Facial</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-nested">
+                <a href="treatments.html#laser">Laser Therapy <span class="second-arrow">▼</span></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="treatments.html#fractional-co2" class="dropdown-link">Fractional CO₂ Laser</a></li>
+                  <li><a href="treatments.html#erbium" class="dropdown-link">Erbium Laser</a></li>
+                  <li><a href="treatments.html#ipl" class="dropdown-link">IPL (Intense Pulsed Light)</a></li>
+                  <li><a href="treatments.html#ndyag" class="dropdown-link">Nd:YAG Laser</a></li>
+                  <li><a href="treatments.html#diode" class="dropdown-link">Diode Laser</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-nested">
+                <a href="treatments.html#botox">Botox & Fillers <span class="second-arrow">▼</span></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="treatments.html#botox-forehead" class="dropdown-link">Botox (Forehead Lines)</a></li>
+                  <li><a href="treatments.html#botox-crows" class="dropdown-link">Botox (Crow's Feet)</a></li>
+                  <li><a href="treatments.html#lip-fillers" class="dropdown-link">Lip Fillers (Hyaluronic Acid)</a></li>
+                  <li><a href="treatments.html#cheek-fillers" class="dropdown-link">Cheek Fillers</a></li>
+                  <li><a href="treatments.html#jawline" class="dropdown-link">Jawline Contouring (Filler)</a></li>
+                  <li><a href="treatments.html#tear-trough" class="dropdown-link">Tear Trough Filler</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="appointment.html" id="appointment">Online Appointment</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
       <img
         src="/pictures/main-picture.png"
         alt="main-picture"
@@ -62,6 +125,7 @@
           Clinic, we're committed to creating skincare products that cater to
           everyone.
         </p>
+        <button><a href="/philosophy.html"> Our Philosophy</a></button>
       </div>
     </section>
 
@@ -106,12 +170,18 @@
       <div class="contact-content">
         <h2>Get in Touch</h2>
       <div>
-        <h5>Mailling Address</h5>
-        <p>Beauty St., Beauty City, Beauty State, Beauty Country</p>
-        <h5>E-Mail Address</h5>
-        <p>info@beautyclinic.xoxo</p>
-        <h5>Phone Number</h5>
-        <p>(+00) 000 00 00</p>
+        <div>
+          <h5>Mailling Address</h5>
+          <p>Beauty St., Beauty City, Beauty State, Beauty Country</p>
+        </div>
+        <div>
+          <h5>E-Mail Address</h5>
+          <p>info@beautyclinic.xoxo</p>
+        </div>
+        <div>
+          <h5>Phone Number</h5>
+          <p>(+00) 000 00 00</p>
+        </div>
       </div>
     </section>
 
@@ -119,14 +189,14 @@
   <div class="footer-container">
     <div class="footer-content">
       <div class="footer-about">
-        <h3>Beauty Clinic</h3>
+        <h4>Beauty Clinic</h4>
         <p>
           Inspired by elegance and refined beauty, we are dedicated to offering timeless care and an unparalleled experience.
         </p>
         <p>Beauty is your right!</p>
       </div>
       <div class="footer-links">
-        <h3>Company</h3>
+        <h4>Company</h4>
         <ul>
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About Us</a></li>
@@ -135,7 +205,7 @@
         </ul>
       </div>
       <div class="footer-newsletter">
-        <h3>Subscribe to our newsletter</h3>
+        <h4>Subscribe to our newsletter</h4>
         <p>
           The latest news, articles, and resources, sent to your inbox
           weekly.
@@ -161,4 +231,5 @@
   </div>
 </footer>
   </body>
+  <script src="script.js"></script>
 </html>
